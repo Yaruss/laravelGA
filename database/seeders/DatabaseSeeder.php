@@ -14,6 +14,16 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+        $names = \App\Models\Name::factory(10)->create();
+        $names_id = $names->pluck('id');
+
+        $names->each(function ($name) use ($names_id){
+            \App\Models\Error::factory(5)->create([
+                'name_id' => $name->id
+            ]);
+        });
+
+
         // \App\Models\User::factory(10)->create();
 
         // \App\Models\User::factory()->create([

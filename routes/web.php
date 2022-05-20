@@ -17,3 +17,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/re', [App\Http\Controllers\RegistredError::class, 'show']);
+
+Route::get('/viewerror', [App\Http\Controllers\ViewError::class, 'show'])->name('viewerror');
+
+Route::get('/viewname', [App\Http\Controllers\ViewName::class, 'show'])->name('viewname');
+Route::get('/editname', [App\Http\Controllers\EditName::class, 'show'])->name('editname');

@@ -42,7 +42,7 @@ class AddRegistredError implements ShouldQueue
     {
         //*
         $error = Error::create ([
-            'name_id'=>$this->name_id,
+            'names_id'=>$this->name_id,
             'id1' => $this->id1,
             'id2' => $this->id2,
             'id3' => $this->id3

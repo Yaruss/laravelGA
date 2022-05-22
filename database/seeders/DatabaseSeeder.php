@@ -19,7 +19,7 @@ class DatabaseSeeder extends Seeder
 
         $names->each(function ($name) use ($names_id){
             \App\Models\Error::factory(5)->create([
-                'name_id' => $name->id
+                'names_id' => $name->id
             ]);
         });
 

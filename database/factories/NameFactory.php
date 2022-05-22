@@ -17,7 +17,7 @@ class NameFactory extends Factory
     public function definition()
     {
         return [
-            'name'=>$this->faker->sentence(2, true),
+            'ganame'=>$this->faker->sentence(2, true),
             'ip'=>'127.0.0.'.$this->faker->numberBetween(1,255)
         ];
     }

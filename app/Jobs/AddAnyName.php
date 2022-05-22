@@ -38,7 +38,7 @@ class AddAnyName implements ShouldQueue
     public function handle()
     {
         Name::create([
-            'name'=>'New GA',
+            'ganame'=>'New GA',
             'ip' => $this->ip
         ]);
     }

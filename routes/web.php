@@ -20,5 +20,9 @@ Route::get('/re', [App\Http\Controllers\RegistredError::class, 'show']);
 
 Route::get('/viewerror', [App\Http\Controllers\ViewError::class, 'show'])->name('viewerror');
 
+
 Route::get('/viewname', [App\Http\Controllers\ViewName::class, 'show'])->name('viewname');
-Route::get('/editname', [App\Http\Controllers\EditName::class, 'show'])->name('editname');
+Route::get('/editname', [App\Http\Controllers\ViewName::class, 'editandshow'])->name('editname');
+Route::get('/delname', [App\Http\Controllers\ViewName::class, 'delandshow'])->name('delname');
+
+

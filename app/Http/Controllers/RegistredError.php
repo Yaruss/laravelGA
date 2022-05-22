@@ -18,7 +18,7 @@ class RegistredError extends Controller
             $name = Name::FindByIp($request->ip());
         }else{
             $name = Name::create([
-                'name'=>'New GA',
+                'ganame'=>'New GA',
                 'ip' => $request->ip()
             ]);
         }

@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('errors', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('name_id')->constrained()->onDelete('cascade');
+            $table->foreignId('names_id')->constrained()->onDelete('cascade');
             $table->integer('id1');
             $table->integer('id2');
             $table->integer('id3');

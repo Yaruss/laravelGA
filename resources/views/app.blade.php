@@ -20,7 +20,7 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link menu-link"
-                       href="{{ route('editname') }}">Управление шлюзами</a>
+                       href="{{ route('viewname') }}">Управление шлюзами</a>
                 </li>
             </ul>
             <a class="d-flex justify-content-end " href="https://github.com/yaruss">

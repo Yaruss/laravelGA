@@ -44,6 +44,13 @@
                         </g>
                     </svg>
                 </div>
+                <div class="text-center text-sm text-gray-500 sm:text-left mt-8">
+                    <div class="flex items-center">
+                        <a href="{{ route('viewerror') }}" class="ml-1 underline">
+                            ENTER GA
+                        </a>
+                    </div>
+                </div>
 
                 <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
                     <div class="grid grid-cols-1 md:grid-cols-2">
